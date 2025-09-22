@@ -6,10 +6,10 @@
 
   <ItemGroup>
     <Reference Include="OpenUtau.Core">
-      <HintPath>..\..\..\..\..\..\Program Files\OpenUtau\OpenUtau.Core.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\OpenUtau\OpenUtau.Core.dll</HintPath>
     </Reference>
     <Reference Include="OpenUtau.Plugin.Builtin">
-      <HintPath>..\..\..\..\..\..\Program Files\OpenUtau\OpenUtau.Plugin.Builtin.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files\OpenUtau\OpenUtau.Plugin.Builtin.dll</HintPath>
     </Reference>
   </ItemGroup>
 

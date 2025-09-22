@@ -66,15 +66,10 @@ namespace MiniBrapaPhonemizer
             else
             {
                 // VCV
-                if (cc.Length == 1 || IsShort(syllable) || cc.Last() == "`")
-                {
-                    basePhoneme = $"{cc.Last()} {v}";
-                }
-                else
-                {
-                    basePhoneme = $"{cc.Last()} {v}";
-                }
-                phonemes.Add($"{prevV} {cc[0]}"); ;
+                basePhoneme = $"{prevV} {cc[0]}";
+                if (HasOto(basePhoneme, syllable.vowelTone))
+                    phonemes.Add(basePhoneme);
+                basePhoneme = $"{cc.Last()} {v}";
                 var offset = burstConsonants.Contains(cc[0]) ? 0 : 1;
                 for (var i = offset; i < cc.Length - 1; i++)
                 {
